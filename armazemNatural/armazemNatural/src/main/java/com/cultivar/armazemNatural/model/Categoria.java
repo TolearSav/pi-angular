@@ -15,6 +15,8 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.URL;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -31,6 +33,7 @@ public class Categoria {
 	
 	@NotNull
 	@Size(min = 2, max = 255)
+	@URL
 	private String imagem;
 	
 	@Temporal(TemporalType.TIMESTAMP)
@@ -55,7 +58,7 @@ public class Categoria {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 	public String getImagem() {
 		return imagem;
 	}
