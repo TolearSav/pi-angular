@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url("https://image.freepik.com/fotos-gratis/vista-aerea-do-computador-portatil-no-conceito-de-espaco-de-trabalho-de-mesa-de-madeira_53876-24817.jpg");
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
