@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Usuario\PI-main\PI-main\spring-e-commerce\armazemNatural\armazemNatural"/>
 			<item value="C:\Users\Usuario\Spring PI\armazemNatural\armazemNatural"/>
 		</list>
 		<list key="projectNameTemplate">
