@@ -1,9 +1,24 @@
-#img-bg{
-    background-image: url("https://image.freepik.com/fotos-gratis/vista-aerea-do-computador-portatil-no-conceito-de-espaco-de-trabalho-de-mesa-de-madeira_53876-24817.jpg");
+.form {
+    position: relative;
+    display: flexbox;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 500px;
+    pointer-events: auto;
+    background-color: #fff;
+    padding: 20px;
+}
 
-    min-height: 695px;
-
-    background-position: center;
+body{
+    padding-top: 3%;
+    padding-bottom: 12%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_960_720.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+    border-radius: 0.2rem;
 }
