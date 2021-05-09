@@ -10,7 +10,6 @@ import { environment } from 'src/environments/environment.prod';
 export class MenuComponent implements OnInit {
 
   nome = environment.nome
-  foto = environment.foto
 
   constructor(
     private router: Router
@@ -23,7 +22,6 @@ export class MenuComponent implements OnInit {
     this.router.navigate(["/home"])
     environment.token = ""
     environment.nome = ""
-    environment.foto = ""
     environment.email = ""
     environment.id = 0
   }
