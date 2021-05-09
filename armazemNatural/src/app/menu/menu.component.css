@@ -4,6 +4,8 @@ nav {
     top: 0;
     right: 0;
     left: 0;
+
+   z-index: 100;
     background: #53744E;
   }
 
@@ -37,7 +39,7 @@ input[type=search]:focus {
   font-size: large;
 }
 
-#logar {
+#sair {
   color: #F88240;
 }
 
