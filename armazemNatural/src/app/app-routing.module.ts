@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArmazemComponent } from './armazem/armazem.component';
+import { MerceariaComponent } from './mercearia/mercearia.component';
 
 const routes: Routes = [
   
@@ -21,6 +22,8 @@ const routes: Routes = [
   {path: 'blog', component: BlogComponent},
   {path: 'armazem', component: ArmazemComponent},
   {path: 'contato', component: ContatoComponent},
+
+  {path: 'mercearia', component: MerceariaComponent},
 
 ];
 

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArmazemComponent } from './armazem/armazem.component';
+import { MerceariaComponent } from './mercearia/mercearia.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ArmazemComponent } from './armazem/armazem.component';
     HomeComponent,
     ContatoComponent,
     BlogComponent,
-    ArmazemComponent
+    ArmazemComponent,
+    MerceariaComponent
   ],
   imports: [
     BrowserModule,
