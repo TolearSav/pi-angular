@@ -6,6 +6,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
+import { ArmazemComponent } from './armazem/armazem.component';
 
 const routes: Routes = [
   
@@ -18,6 +19,7 @@ const routes: Routes = [
 
   {path: 'inicio', component: InicioComponent},
   {path: 'blog', component: BlogComponent},
+  {path: 'armazem', component: ArmazemComponent},
   {path: 'contato', component: ContatoComponent},
 
 ];
