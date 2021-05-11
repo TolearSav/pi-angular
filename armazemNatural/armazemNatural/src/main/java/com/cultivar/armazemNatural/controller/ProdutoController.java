@@ -43,21 +43,6 @@ public class ProdutoController {
 		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	
-	@GetMapping("/descricao/{descricao}")
-	public ResponseEntity<List<Produto>> getByDescricao(@PathVariable String descricao){
-		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));
-	}
-	
-	@GetMapping("/marca/{marca}")
-	public ResponseEntity<List<Produto>> getByMarca(@PathVariable String marca){
-		return ResponseEntity.ok(repository.findAllByMarcaContainingIgnoreCase(marca));
-	}
-	
-	@GetMapping("/fornecedor/{fornecedor}")
-	public ResponseEntity<List<Produto>> getByFornecedor(@PathVariable String fornecedor){
-		return ResponseEntity.ok(repository.findAllByFornecedorContainingIgnoreCase(fornecedor));
-	}
-	
 	@PostMapping
 	public ResponseEntity<Produto> post (@RequestBody Produto produto){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));

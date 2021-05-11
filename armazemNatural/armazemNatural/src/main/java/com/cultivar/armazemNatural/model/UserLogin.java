@@ -6,6 +6,7 @@ public class UserLogin {
 	private String email;
 	private String senha;
 	private String token;
+	private String tipo;
 	
 	public String getNome() {
 		return nome;
@@ -30,5 +31,11 @@ public class UserLogin {
 	}
 	public void setToken(String token) {
 		this.token = token;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 }

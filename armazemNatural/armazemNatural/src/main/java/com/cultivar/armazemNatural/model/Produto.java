@@ -38,9 +38,6 @@ public class Produto {
 	private String marca;
 	
 	@NotNull
-	private String fornecedor;
-	
-	@NotNull
 	private long qtdEstoque;
 	
 	@NotNull
@@ -95,14 +92,6 @@ public class Produto {
 
 	public void setMarca(String marca) {
 		this.marca = marca;
-	}
-
-	public String getFornecedor() {
-		return fornecedor;
-	}
-
-	public void setFornecedor(String fornecedor) {
-		this.fornecedor = fornecedor;
 	}
 
 	public long getQtdEstoque() {

@@ -19,44 +19,43 @@ import com.cultivar.armazemNatural.model.Categoria;
 import com.cultivar.armazemNatural.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping("/categorias")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+@RequestMapping("/categoria")
 public class CategoriaController {
 	
 	@Autowired
 	private CategoriaRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<Categoria>>getAll(){
+	public ResponseEntity<List<Categoria>> getAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Categoria> getById(@PathVariable long id) {
-		return repository.findById(id)
-				.map(resp -> ResponseEntity.ok(resp))
+	public ResponseEntity<Categoria> getById(@PathVariable long id){
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Categoria>> getByNome(@PathVariable String nome){
+	public ResponseEntity<List<Categoria>> getByName(@PathVariable String nome){
 		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	
 	@PostMapping
 	public ResponseEntity<Categoria> post (@RequestBody Categoria categoria){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
+		return ResponseEntity.status(HttpStatus.CREATED)
+				.body(repository.save(categoria));
 	}
 	
 	@PutMapping
 	public ResponseEntity<Categoria> put (@RequestBody Categoria categoria){
-		return ResponseEntity.status(HttpStatus.OK).body(repository.save(categoria));
+		return ResponseEntity.ok(repository.save(categoria));
 	}
 	
 	@DeleteMapping("/{id}")
-	public void  delete(@PathVariable long id){
+	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
-
-
+	
 }

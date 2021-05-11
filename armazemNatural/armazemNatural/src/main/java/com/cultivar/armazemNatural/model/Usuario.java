@@ -25,6 +25,9 @@ public class Usuario {
 	@NotNull
 	@Size(min = 8, max = 200)
 	private String senha;
+	
+	@NotNull
+	private String tipo;
 
 	public long getId() {
 		return id;
@@ -56,6 +59,14 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 }
