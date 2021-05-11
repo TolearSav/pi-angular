@@ -15,6 +15,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArmazemComponent } from './armazem/armazem.component';
 import { MerceariaComponent } from './mercearia/mercearia.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MerceariaComponent } from './mercearia/mercearia.component';
     ContatoComponent,
     BlogComponent,
     ArmazemComponent,
-    MerceariaComponent
+    MerceariaComponent,
+    CategoriaComponent,
+    CategoriaDeleteComponent
   ],
   imports: [
     BrowserModule,

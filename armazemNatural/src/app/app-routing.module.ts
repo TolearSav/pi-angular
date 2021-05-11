@@ -8,6 +8,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArmazemComponent } from './armazem/armazem.component';
 import { MerceariaComponent } from './mercearia/mercearia.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 
 const routes: Routes = [
   
@@ -23,6 +25,8 @@ const routes: Routes = [
   {path: 'armazem', component: ArmazemComponent},
   {path: 'contato', component: ContatoComponent},
 
+  {path: 'categoria', component: CategoriaComponent},
+  {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
   {path: 'mercearia', component: MerceariaComponent},
 
 ];
