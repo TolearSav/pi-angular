@@ -17,6 +17,7 @@ import { ArmazemComponent } from './armazem/armazem.component';
 import { MerceariaComponent } from './mercearia/mercearia.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
     ArmazemComponent,
     MerceariaComponent,
     CategoriaComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
+    CategoriaEditComponent
   ],
   imports: [
     BrowserModule,
