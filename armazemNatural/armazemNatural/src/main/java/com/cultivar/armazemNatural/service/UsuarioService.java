@@ -19,8 +19,9 @@ public class UsuarioService {
 	
 	public Optional<Usuario> CadastrarUsuario(Usuario usuario) {
 		
-		if(usuarioRepository.findByEmail(usuario.getEmail()).isPresent())
+		if(usuarioRepository.findByEmail(usuario.getEmail()).isPresent() && usuario.getId() == 0) {
 			return null;
+		}
 			
 			BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 			
